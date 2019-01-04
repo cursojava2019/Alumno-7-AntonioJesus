@@ -1,0 +1,26 @@
+@charset "ISO-8859-1";
+
+body{
+  font-size: 16px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+p {
+	 color: #555;
+}
+#primero p {
+  color: #369;
+}
+a {
+  color: #C30;
+}
+#primero em{
+  color: #0000BB;
+  background-color: #FFFFCC;
+}
+ .especial {
+  color: #FFFF00;
+  background: #000000;
+}
+.normal span {
+  font-weight: bold;
+}

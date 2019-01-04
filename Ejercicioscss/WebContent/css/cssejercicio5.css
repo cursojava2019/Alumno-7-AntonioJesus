@@ -1,0 +1,40 @@
+@charset "ISO-8859-1";
+
+body{
+  width: 960px;
+  margin: 0px auto;
+}
+header {
+	text-align:center;
+}
+h2 {
+	margin:20px 0px 20px 0px;
+}
+aside{
+	width:260px;
+	margin:0px;
+	padding:0px;
+	float:left;
+}
+main {
+	width:700px;
+	float:right;
+	margin:0px;
+	padding:0px;
+}
+#caja1{
+	float:left;
+	width:200px;
+	margin-top:5px;
+	
+}
+#caja2{
+	float:left;
+	width:200px;
+	margin:5px 20px 20px 20px;
+}
+#caja3{
+	float:left;
+	width:200px;
+	margin-top:5px;
+}
