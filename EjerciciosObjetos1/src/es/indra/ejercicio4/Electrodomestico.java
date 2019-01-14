@@ -1,13 +1,13 @@
 package es.indra.ejercicio4;
 
 public class Electrodomestico {
-	static Color COLOR_BASE = Color.BLANCO;
+	static String COLOR_BASE = "BLANCO";
 	static final Float PRECIO_DEFECTO = Float.valueOf(100);
 	static final Float PESO_DEFECTO = Float.valueOf(5);
 	static Character CLASIFICACION = 'F';
 
 	protected Float preciobase;
-	protected Color color;
+	protected String color;
 	protected Character clasificacion;
 	protected Float peso;
 
@@ -19,7 +19,7 @@ public class Electrodomestico {
 		this.peso = PESO_DEFECTO;
 	}
 
-	public Electrodomestico(Float preciobase, Color color, char clasificacion, Float peso) {
+	public Electrodomestico(Float preciobase, String color, char clasificacion, Float peso) {
 		this.preciobase = preciobase;
 		this.color = color;
 		this.comprobarConsumoEnergetico(clasificacion);
@@ -43,11 +43,11 @@ public class Electrodomestico {
 		this.preciobase = preciobase;
 	}
 
-	public Color getColor() {
+	public String getColor() {
 		return color;
 	}
 
-	public void setColor(Color color) {
+	public void setColor(String color) {
 		this.color = color;
 	}
 
@@ -77,10 +77,9 @@ public class Electrodomestico {
 	}
 
 	private void comprobarcolor(String color) {
-		if (color.equalsIgnoreCase(Color.ROJO.toString()) || color.equalsIgnoreCase(Color.AZUL.toString())
-				|| color.equalsIgnoreCase(Color.GRIS.toString()) || color.equalsIgnoreCase(Color.NEGRO.toString())
-				|| color.equalsIgnoreCase(Color.BLANCO.toString())) {
-			this.color = Color.valueOf(color);
+		if (color.equals("ROJO") || color.equals("AZUL") || color.equals("GRIS") || color.equals("NEGRO")
+				|| color.equals("BLANCO")) {
+			this.color = color;
 		} else {
 			this.color = COLOR_BASE;
 		}

@@ -13,7 +13,7 @@ public class Television extends Electrodomestico {
 		this.sintonizador = SINTONIZADOR_DEFECTO;
 	}
 
-	public Television(Float preciobase, Color color, char clasificacion, Float peso, int resolucion,
+	public Television(Float preciobase, String color, char clasificacion, Float peso, int resolucion,
 			boolean sintonizador) {
 		super(preciobase, color, clasificacion, peso);
 		this.resolucion = resolucion;

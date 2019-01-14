@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Formulario de registro</title>
+</head>
+<body>
+<h1>Formulario de Registro</h1>
+	<form method="get" action="">
+		<label>Nombre: 
+		<input type="text" name="nombre" maxlength=50 >
+		</label>
+		<br>
+		<label>Apellidos: 
+		<input type="text" name="apellidos" maxlength=50>
+		</label>
+		<br>
+		<label>Sexo: 
+		<input type="radio" name="sexo" value="Varón" >
+		<input type="radio" name="sexo" value="Hembra" >
+		</label>
+		<br>
+		<label>Correo electrónico: 
+		<input type="email" name="correo">
+		</label>
+		<br>
+		<label>
+		<label>Provincias:</label>
+		<select name="ciudad">
+			<option value="madrid">Madrid</option>
+			<option value="alicante">Alicante</option>
+			<option value="salamanca">Salamanca</option>
+			<option value="valencia">Valencia</option>
+		</select>
+		<br>
+		<label>Descripción</label><br>
+		<textarea name="areatexto"></textarea>
+		<br>
+		<input type="checkbox" name="publi">Desea recibir información sobre 
+		novedades e información.
+		</label>
+		<br>
+		<label>
+		<input type="checkbox" name="terminos">Declaro haber leido y aceptar 
+		las condiciones generales del programa y la normativa sobre protección de datos
+		</label>
+		<br>
+		<input type="submit">
+		
+	</form>
+
+</body>
+</html>
