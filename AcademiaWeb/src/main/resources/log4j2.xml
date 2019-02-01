@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration xmlns="http://logging.apache.org/log4j/2.0/config">
+
+    <Appenders>
+        <File name="FILE" fileName="C:\\Users\\CURSOJAVA\\Documents\\Desarrollo\\academia.log" append="true">
+            <PatternLayout pattern="%-5p | %d{yyyy-MM-dd HH:mm:ss} | %c{1} [%t] (%C{2}:%L) - %m%n"/>
+        </File>
+        <Console name="STDOUT" target="SYSTEM_OUT">
+            <PatternLayout pattern="%-5p | %d{yyyy-MM-dd HH:mm:ss} | %c{1} [%t] (%C{2}:%L) - %m%n"/> 
+        </Console>
+    </Appenders>
+
+    <Loggers>
+        <Logger name="es.indra" level="info">
+         
+            <AppenderRef ref="FILE"/>
+        </Logger>
+
+        <Root level="info">
+            <AppenderRef ref="STDOUT"/>
+            <AppenderRef ref="FILE"/>
+        </Root>
+    </Loggers>
+
+</Configuration>
