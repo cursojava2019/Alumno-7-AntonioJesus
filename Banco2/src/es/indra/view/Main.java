@@ -48,13 +48,12 @@ public class Main {
 		Integer codigo = teclado.nextInt();
 		System.out.print("Introducir el DNI del cliente:");
 		String dni = teclado.next();
-		int aux;
 		Integer ping;
 		do {
 			System.out.print("Introducir el ping secreto:");
 			ping = teclado.nextInt();
-			aux = ping / 10000;
-		} while (aux != 0);
+
+		} while (((int) Math.log10(ping) + 1) != 4);
 		do {
 			System.out.println("¿Que tipo de cuenta desea?");
 			System.out.println("Elija C para cuenta corriente, V para Vivienda o I para inversion.");

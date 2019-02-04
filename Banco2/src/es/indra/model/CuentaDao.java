@@ -63,13 +63,13 @@ public class CuentaDao implements Dao<Integer, Cuenta> {
 	public void update(Cuenta entity) throws DaoException {
 		try {
 			Connection co = getConexion();
-			PreparedStatement ps = co.prepareStatement("UPDATE cliente SET saldo=?,ping=? where codigo=? ");
-			ps.setDouble(2, entity.getSaldo());
-			ps.setInt(5, entity.getPing());
+			PreparedStatement ps = co.prepareStatement("UPDATE Cuenta SET saldo=? where codigo=? ");
+			ps.setDouble(1, entity.getSaldo());
+			ps.setInt(2, entity.getCodigo());
 			ps.executeUpdate();
 			co.close();
 		} catch (SQLException e) {
-			System.out.println("Error creando objeto en BBDD");
+			System.out.println("Error al actualizar el objeto en BBDD");
 			throw new DaoException();
 		}
 
@@ -78,7 +78,7 @@ public class CuentaDao implements Dao<Integer, Cuenta> {
 	public void bloqueo(Integer key) throws DaoException {
 		try {
 			Connection co = getConexion();
-			PreparedStatement ps = co.prepareStatement("UPDATE cliente SET bloqueo=? where codigo=? ");
+			PreparedStatement ps = co.prepareStatement("UPDATE Cuenta SET bloqueo=? where codigo=? ");
 			ps.setBoolean(6, true);
 			ps.executeUpdate();
 			co.close();
@@ -91,12 +91,12 @@ public class CuentaDao implements Dao<Integer, Cuenta> {
 	public void desbloqueo(Integer key) throws DaoException {
 		try {
 			Connection co = getConexion();
-			PreparedStatement ps = co.prepareStatement("UPDATE cliente SET bloqueo=? where codigo=? ");
+			PreparedStatement ps = co.prepareStatement("UPDATE cuenta SET bloqueo=? where codigo=? ");
 			ps.setBoolean(6, false);
 			ps.executeUpdate();
 			co.close();
 		} catch (SQLException e) {
-			System.out.println("Error al bloquear el objeto en BBDD");
+			System.out.println("Error al desbloquear el objeto en BBDD");
 			throw new DaoException();
 		}
 	}

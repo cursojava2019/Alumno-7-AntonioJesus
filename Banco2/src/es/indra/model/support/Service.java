@@ -51,12 +51,4 @@ public abstract class Service<K, O> {
 
 	}
 
-	public void desbloqueo(K k) {
-
-	}
-
-	public void bloqueo(K k) {
-
-	}
-
 }
