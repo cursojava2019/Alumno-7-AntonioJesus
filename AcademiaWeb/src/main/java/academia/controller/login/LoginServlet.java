@@ -52,7 +52,7 @@ public class LoginServlet extends HttpServlet {
 			sesion.setAttribute("identificado", "si");
 			response.sendRedirect(request.getContextPath() + "/admin/index.html");
 		} else {
-			response.sendError(403, "Usuario Mal");
+			response.sendRedirect(request.getContextPath());
 		}
 	}
 

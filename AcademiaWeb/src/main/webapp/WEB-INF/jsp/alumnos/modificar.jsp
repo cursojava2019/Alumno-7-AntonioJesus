@@ -51,7 +51,7 @@ if (formulario==null){
                            			 
                            			 <%} %>
                                     <form role="form" action="./modificar.html" method="post">
-                                       <input type="hidden" value="<%=formulario.getId()%>" name="id"/>
+                                       <input type="text" value="<%=formulario.getId()%>" name="id"/>
                                         <div class="form-group">
                                             <label>NIF</label>
                                             <input name="nif" class="form-control" value="<%=formulario.getNif()%>">
@@ -94,7 +94,8 @@ if (formulario==null){
                                             <label>Observaciones</label>
                                             <textarea class="form-control" name="observaciones" rows="3"><%=formulario.getObservaciones()%></textarea>
                                         </div>
-                                      	
+                                      		<input type="hidden" name="fechaAlta" value="<%=formulario.getFechaAlta()%>"/>
+                                      		<input type="hidden" name="fechaBaja" value="<%=formulario.getFechaBaja()%>"/>
                                         <button type="submit" class="btn btn-default">Enviar</button>
                                         <button type="reset" class="btn btn-default">Limpiar</button>
                                     </form>

@@ -22,6 +22,7 @@ public class AlumnoForm extends Alumno {
 
 	public AlumnoForm(Alumno alumno) {
 		super();
+		setId(alumno.getId());
 		setNif(alumno.getNif());
 		setNombre(alumno.getNombre());
 		setApellido1(alumno.getApellido1());

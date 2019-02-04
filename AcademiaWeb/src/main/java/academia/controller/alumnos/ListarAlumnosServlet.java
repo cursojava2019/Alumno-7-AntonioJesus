@@ -2,7 +2,6 @@ package academia.controller.alumnos;
 
 import java.io.IOException;
 import java.util.List;
-import java.util.logging.LogManager;
 
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
@@ -10,8 +9,6 @@ import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-
-import org.apache.logging.log4j.Logger;
 
 import academia.model.entities.Alumno;
 import academia.model.service.AlumnoService;
@@ -22,7 +19,6 @@ import academia.model.service.AlumnoService;
 @WebServlet("/admin/alumnos/listado.html")
 public class ListarAlumnosServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
-	private Logger log = LogManager.getLogger(ListarAlumnosServlet.class);
 
 	/**
 	 * @see HttpServlet#HttpServlet()

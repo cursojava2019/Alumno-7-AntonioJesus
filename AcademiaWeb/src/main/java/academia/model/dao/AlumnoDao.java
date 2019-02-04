@@ -58,11 +58,9 @@ public class AlumnoDao implements Dao<Long, Alumno> {
 
 		try {
 			Connection co = Configuracion.getInstance().obtenerConexionBD();
-			PreparedStatement p = co.prepareStatement("UPDATE ALUMNO" + " SET dni=?," + "nombre=?," + "apellido1=?,"
-					+ "apellido2=?," + "telefono=?," + "correo=?," + "repetidor=?," + "fechaalta=?," + "fechabaja=?,"
-					+ "observaciones=?  WHERE id=?;");
+			PreparedStatement p = co.prepareStatement("UPDATE ALUMNO" + " SET nif=?," + "nombre=?," + "apellido1=?,"
+					+ "apellido2=?," + "telefono=?," + "correo=?," + "repetidor=?," + "observaciones=?  WHERE id=?;");
 
-			p.setLong(11, entity.getId());
 			p.setString(1, entity.getNif());
 			p.setString(2, entity.getNombre());
 			p.setString(3, entity.getApellido1());
@@ -70,9 +68,9 @@ public class AlumnoDao implements Dao<Long, Alumno> {
 			p.setString(5, entity.getTlf());
 			p.setString(6, entity.getCorreo());
 			p.setBoolean(7, entity.getRepetidor());
-			p.setDate(8, new java.sql.Date(entity.getFechaAlta().getTime()));
-			p.setDate(9, new java.sql.Date(entity.getFechaBaja().getTime()));
-			p.setString(10, entity.getObservaciones());
+
+			p.setString(8, entity.getObservaciones());
+			p.setLong(9, entity.getId());
 			p.executeUpdate();
 			co.close();
 		} catch (SQLException e) {
