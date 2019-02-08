@@ -1,0 +1,53 @@
+INFO  | 2019-02-01 18:31:36 | ListarAlumnosServlet [http-nio-8081-exec-2] (alumnos.ListarAlumnosServlet:42) - Se recibe una petición para listar alumnos
+INFO  | 2019-02-01 18:31:36 | ListarAlumnosServlet [http-nio-8081-exec-2] (alumnos.ListarAlumnosServlet:42) - Se recibe una petición para listar alumnos
+INFO  | 2019-02-01 18:36:29 | ListarAlumnosServlet [http-nio-8081-exec-5] (alumnos.ListarAlumnosServlet:42) - Se recibe una petición para listar alumnos
+INFO  | 2019-02-01 18:36:29 | ListarAlumnosServlet [http-nio-8081-exec-5] (alumnos.ListarAlumnosServlet:42) - Se recibe una petición para listar alumnos
+DEBUG | 2019-02-01 18:36:29 | ListarAlumnosServlet [http-nio-8081-exec-5] (alumnos.ListarAlumnosServlet:49) - Se obtienen todos los alumnos de BBDD y se mandan al jsp
+DEBUG | 2019-02-01 18:36:29 | ListarAlumnosServlet [http-nio-8081-exec-5] (alumnos.ListarAlumnosServlet:49) - Se obtienen todos los alumnos de BBDD y se mandan al jsp
+INFO  | 2019-02-01 18:36:50 | ListarAlumnosServlet [http-nio-8081-exec-9] (alumnos.ListarAlumnosServlet:42) - Se recibe una petición para listar alumnos
+INFO  | 2019-02-01 18:36:50 | ListarAlumnosServlet [http-nio-8081-exec-9] (alumnos.ListarAlumnosServlet:42) - Se recibe una petición para listar alumnos
+DEBUG | 2019-02-01 18:36:50 | ListarAlumnosServlet [http-nio-8081-exec-9] (alumnos.ListarAlumnosServlet:49) - Se obtienen todos los alumnos de BBDD y se mandan al jsp
+DEBUG | 2019-02-01 18:36:50 | ListarAlumnosServlet [http-nio-8081-exec-9] (alumnos.ListarAlumnosServlet:49) - Se obtienen todos los alumnos de BBDD y se mandan al jsp
+INFO  | 2019-02-01 18:49:00 | ListarAlumnosServlet [http-nio-8081-exec-14] (alumnos.ListarAlumnosServlet:42) - Se recibe una petición para listar alumnos
+INFO  | 2019-02-01 18:49:00 | ListarAlumnosServlet [http-nio-8081-exec-14] (alumnos.ListarAlumnosServlet:42) - Se recibe una petición para listar alumnos
+INFO  | 2019-02-01 18:59:26 | ListarAlumnosServlet [http-nio-8081-exec-16] (alumnos.ListarAlumnosServlet:42) - Se recibe una petición para listar alumnos
+INFO  | 2019-02-01 18:59:26 | ListarAlumnosServlet [http-nio-8081-exec-16] (alumnos.ListarAlumnosServlet:42) - Se recibe una petición para listar alumnos
+INFO  | 2019-02-01 18:59:26 | ListarAlumnosServlet [http-nio-8081-exec-13] (alumnos.ListarAlumnosServlet:42) - Se recibe una petición para listar alumnos
+INFO  | 2019-02-01 18:59:26 | ListarAlumnosServlet [http-nio-8081-exec-13] (alumnos.ListarAlumnosServlet:42) - Se recibe una petición para listar alumnos
+INFO  | 2019-02-01 19:07:50 | ListarAlumnosServlet [http-nio-8081-exec-16] (alumnos.ListarAlumnosServlet:42) - Se recibe una petición para listar alumnos
+INFO  | 2019-02-01 19:07:50 | ListarAlumnosServlet [http-nio-8081-exec-16] (alumnos.ListarAlumnosServlet:42) - Se recibe una petición para listar alumnos
+INFO  | 2019-02-01 19:08:02 | ListarAlumnosServlet [http-nio-8081-exec-18] (alumnos.ListarAlumnosServlet:42) - Se recibe una petición para listar alumnos
+INFO  | 2019-02-01 19:08:02 | ListarAlumnosServlet [http-nio-8081-exec-18] (alumnos.ListarAlumnosServlet:42) - Se recibe una petición para listar alumnos
+INFO  | 2019-02-04 17:25:14 | ListarAlumnosServlet [http-nio-8081-exec-10] (alumnos.ListarAlumnosServlet:52) - Se recibe una petición para listar alumnos
+INFO  | 2019-02-04 17:25:14 | ListarAlumnosServlet [http-nio-8081-exec-1] (alumnos.ListarAlumnosServlet:52) - Se recibe una petición para listar alumnos
+INFO  | 2019-02-04 17:25:14 | ListarAlumnosServlet [http-nio-8081-exec-1] (alumnos.ListarAlumnosServlet:52) - Se recibe una petición para listar alumnos
+INFO  | 2019-02-04 17:25:14 | ListarAlumnosServlet [http-nio-8081-exec-10] (alumnos.ListarAlumnosServlet:52) - Se recibe una petición para listar alumnos
+INFO  | 2019-02-04 19:28:33 | Version [localhost-startStop-1] (util.Version:21) - HV000001: Hibernate Validator 6.0.2.Final
+INFO  | 2019-02-04 19:31:30 | Version [localhost-startStop-1] (util.Version:21) - HV000001: Hibernate Validator 6.0.2.Final
+INFO  | 2019-02-04 19:35:07 | Version [ContainerBackgroundProcessor[StandardEngine[Catalina]]] (util.Version:21) - HV000001: Hibernate Validator 6.0.2.Final
+INFO  | 2019-02-04 20:22:04 | Version [localhost-startStop-1] (util.Version:21) - HV000001: Hibernate Validator 6.0.2.Final
+INFO  | 2019-02-04 20:43:24 | Version [localhost-startStop-1] (util.Version:21) - HV000001: Hibernate Validator 6.0.2.Final
+INFO  | 2019-02-04 20:47:42 | Version [ContainerBackgroundProcessor[StandardEngine[Catalina]]] (util.Version:21) - HV000001: Hibernate Validator 6.0.2.Final
+INFO  | 2019-02-04 20:49:27 | Version [ContainerBackgroundProcessor[StandardEngine[Catalina]]] (util.Version:21) - HV000001: Hibernate Validator 6.0.2.Final
+INFO  | 2019-02-04 20:51:27 | Version [localhost-startStop-1] (util.Version:21) - HV000001: Hibernate Validator 6.0.2.Final
+INFO  | 2019-02-05 16:07:02 | Version [localhost-startStop-1] (util.Version:21) - HV000001: Hibernate Validator 6.0.2.Final
+INFO  | 2019-02-05 18:53:17 | Version [localhost-startStop-1] (util.Version:21) - HV000001: Hibernate Validator 6.0.2.Final
+INFO  | 2019-02-05 19:01:24 | Version [localhost-startStop-1] (util.Version:21) - HV000001: Hibernate Validator 6.0.2.Final
+INFO  | 2019-02-05 19:04:44 | Version [localhost-startStop-1] (util.Version:21) - HV000001: Hibernate Validator 6.0.2.Final
+INFO  | 2019-02-05 19:06:31 | Version [localhost-startStop-1] (util.Version:21) - HV000001: Hibernate Validator 6.0.2.Final
+INFO  | 2019-02-05 19:07:34 | Version [localhost-startStop-1] (util.Version:21) - HV000001: Hibernate Validator 6.0.2.Final
+INFO  | 2019-02-05 19:10:00 | Version [localhost-startStop-1] (util.Version:21) - HV000001: Hibernate Validator 6.0.2.Final
+INFO  | 2019-02-05 19:16:57 | Version [ContainerBackgroundProcessor[StandardEngine[Catalina]]] (util.Version:21) - HV000001: Hibernate Validator 6.0.2.Final
+INFO  | 2019-02-05 19:17:11 | Version [localhost-startStop-1] (util.Version:21) - HV000001: Hibernate Validator 6.0.2.Final
+INFO  | 2019-02-05 19:22:30 | Version [localhost-startStop-1] (util.Version:21) - HV000001: Hibernate Validator 6.0.2.Final
+INFO  | 2019-02-05 19:32:51 | Version [ContainerBackgroundProcessor[StandardEngine[Catalina]]] (util.Version:21) - HV000001: Hibernate Validator 6.0.2.Final
+INFO  | 2019-02-05 19:34:12 | Version [localhost-startStop-1] (util.Version:21) - HV000001: Hibernate Validator 6.0.2.Final
+INFO  | 2019-02-05 20:33:26 | Version [localhost-startStop-1] (util.Version:21) - HV000001: Hibernate Validator 6.0.2.Final
+INFO  | 2019-02-05 20:39:48 | Version [localhost-startStop-1] (util.Version:21) - HV000001: Hibernate Validator 6.0.2.Final
+INFO  | 2019-02-05 20:50:12 | Version [localhost-startStop-1] (util.Version:21) - HV000001: Hibernate Validator 6.0.2.Final
+INFO  | 2019-02-05 20:51:50 | Version [ContainerBackgroundProcessor[StandardEngine[Catalina]]] (util.Version:21) - HV000001: Hibernate Validator 6.0.2.Final
+INFO  | 2019-02-06 16:09:22 | Version [localhost-startStop-1] (util.Version:21) - HV000001: Hibernate Validator 6.0.2.Final
+INFO  | 2019-02-06 16:12:54 | Version [localhost-startStop-1] (util.Version:21) - HV000001: Hibernate Validator 6.0.2.Final
+INFO  | 2019-02-06 16:20:28 | Version [localhost-startStop-1] (util.Version:21) - HV000001: Hibernate Validator 6.0.2.Final
+INFO  | 2019-02-06 16:30:00 | Version [ContainerBackgroundProcessor[StandardEngine[Catalina]]] (util.Version:21) - HV000001: Hibernate Validator 6.0.2.Final
+INFO  | 2019-02-06 16:36:12 | Version [localhost-startStop-1] (util.Version:21) - HV000001: Hibernate Validator 6.0.2.Final

@@ -1,0 +1,5 @@
+INSERT INTO alumno (nombre, apellido1,apellido2,nif,telefono,correo,repetidor)
+VALUES ('estudiante1','estudiante1ape1','estudiante1ape2','75483057f','616543434','estudiante1@gmail.com',false); 
+
+INSERT INTO alumno (nombre, apellido1,apellido2,nif,telefono,correo,repetidor)
+VALUES ('estudiante3','estudiante1ape3','estudiante1ape3','56789047H','958333333','estudiante3@gmail.com',false);

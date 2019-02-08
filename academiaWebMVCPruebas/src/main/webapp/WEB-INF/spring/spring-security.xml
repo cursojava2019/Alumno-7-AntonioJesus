@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans:beans xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="http://www.springframework.org/schema/security" xmlns:beans="http://www.springframework.org/schema/beans"
+	xsi:schemaLocation="http://www.springframework.org/schema/security 
+	http://www.springframework.org/schema/security/spring-security-3.2.xsd
+	http://www.springframework.org/schema/beans 
+	http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	<http auto-config="true" access-denied-page="/admin/sinPermisos.html" use-expressions="true">
+		
+		<intercept-url pattern="/admin/inicio.html" access="hasAnyRole('ALUMNOS','PROFESORES')"/>
+		<intercept-url pattern="/admin/alumnos/**" access="hasRole('ALUMNOS')"/>
+		<intercept-url pattern="/admin/profesores/**" access="hasRole('PROFESORES')"/>
+		
+		
+		
+		
+		<form-login login-page="/index.html"  
+			login-processing-url="/j_spring_security_check" 
+			 authentication-failure-url="/index.html?loginFailed=true" 
+			default-target-url="/admin/index.html"
+			 />
+		<logout invalidate-session="true" delete-cookies="true"
+		    logout-url="/logout"
+			logout-success-url="/index.html" />
+	</http>
+	
+	<authentication-manager alias="authenticationManager">
+        <authentication-provider user-service-ref="autenticacionService" >
+        
+        </authentication-provider>
+        
+    </authentication-manager>
+
+	<global-method-security pre-post-annotations="enabled"
+		secured-annotations="enabled" jsr250-annotations="enabled" />
+  
+  
+  
+  
+</beans:beans>
