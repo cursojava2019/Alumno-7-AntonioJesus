@@ -1,0 +1,12 @@
+<h2>Lista de tareas</h2>
+
+<ul>
+<li *ngFor="let item of listado">
+  <input type="checkbox" [([(ngModel)="name"]="item.hecho")]>
+  <span [class.tachado]="item.hecho"></span>
+  {{item.nombre}}
+</li>
+<input text [(ngModel)]="tareaentrada">
+<button (click)="crearTarea()">Añadir Tarea</button>
+</ul>
+{{listado}}

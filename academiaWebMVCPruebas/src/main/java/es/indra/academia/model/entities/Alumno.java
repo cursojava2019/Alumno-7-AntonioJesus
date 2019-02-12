@@ -1,9 +1,23 @@
 package es.indra.academia.model.entities;
 
+import java.io.Serializable;
 import java.util.Date;
 
-public class Alumno {
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.Table;
+import javax.persistence.Temporal;
+import javax.persistence.TemporalType;
 
+@Entity
+@Table(name = "ALUMNO")
+public class Alumno implements Serializable {
+
+	@Id
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long id;
 
 	private String nombre;
@@ -13,7 +27,11 @@ public class Alumno {
 	private String telefono;
 	private String correo;
 	private Boolean repetidor;
+	@Column(name = "fechaalta")
+	@Temporal(value = TemporalType.TIMESTAMP)
 	private Date fechaAlta;
+	@Column(name = "fechabaja")
+	@Temporal(value = TemporalType.TIMESTAMP)
 	private Date fechaBaja;
 	private String observaciones;
 

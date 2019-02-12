@@ -7,4 +7,9 @@
 <button (click)="cambiarNombre('Josema Molino')"  >Boton Josema</button>
 <button (click)="cambiarNombre('Josema Molino Hervas')"  >Boton Josema</button>
   </p>
+  <p>
+<label>Introducir nombre:<input type="text" [(ngModel)]= "nombreEntrada")] ></label>
 
+</p>
+<button (click)="cambiarnombreentrada(nombreEntrada)">Cambiar nombre</button>
+<h2>{{nombreEntrada}} </h2>
